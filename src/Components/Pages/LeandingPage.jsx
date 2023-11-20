@@ -11,19 +11,21 @@ import "./Leanding.css";
 function LeandingPage() {
   return (
     <div
-      className={`leanding h-[90vh] w-full bg-cover bg-center bg-slate-50 dark:bg-slate-800`}
+      className={`leanding h-[100vh] w-full bg-cover bg-center bg-slate-50 dark:bg-slate-800`}
     >
       <div className=" px-10 md:px-[7%] lg:px-[10%] h-screen grid grid-flow-row md:flex lg:space-y-0 md:space-y-0 -space-y-[100px]  items-center justify-between">
         <motion.div
-          initial={{
-            x: -400,
-          }}
-          animate={{
-            x: 0,
-          }}
+         initial={{
+          y: 75,
+          opacity: 0
+        }}
+       whileInView={{
+        y: 0,
+        opacity: 1
+       }}
           transition={{
-            duration: 1,
-            delay: 0.1,
+            duration: 0.5,
+            delay: .25,
           }}
           className="  w-full md:w-[50%] md:text-left text-center"
         >
@@ -73,14 +75,16 @@ function LeandingPage() {
         {/* awkjlkfjalfjkajf */}
         <motion.div
           initial={{
-            x: 400,
+            y: 75,
+            opacity: 0
           }}
-          animate={{
-            x: 0,
-          }}
+         whileInView={{
+          y: 0,
+          opacity: 1
+         }}
           transition={{
-            duration: 1,
-            delay: 0.1,
+            duration: 0.5,
+            delay: .25,
           }}
           className="w-full md:w-[50%]"
         >

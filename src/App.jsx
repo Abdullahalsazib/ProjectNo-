@@ -10,7 +10,9 @@ function App() {
       <div className=" bg-white dark:bg-slate-800">
         <Navbar />
         <LeandingPage />
-        <About />
+        <About  />
+        <About  />
+        <About  />
       </div>
     </>
   );
