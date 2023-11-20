@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
+import { Toggle } from "keep-react";
+
+
+
+
+
 // json
 const MenuList = [
   { menuTitle: "Home", MenuLink: "@" },
@@ -78,24 +84,8 @@ function Navbar() {
           }}
           className="flex items-center space-x-4"
         >
-          <div
-            onClick={handleThemeChange}
-            className={`rounded-full cursor-pointer flex items-center ${
-              theme === "light" ? "justify-end" : "justify-start"
-            } bg-slate-500 text-white`}
-          >
-            {theme === "light" ? (
-              <div className="px-2 py-1  rounded-full bg-slate-600 w-full flex items-center">
-                <Sun className=" bg-[#ff5503] rounded-full" />
-                <p className=" text-sm lg:p-1">Dark</p>
-              </div>
-            ) : (
-              <div className=" px-2 py-1 rounded-full bg-slate-400 w-full flex items-center">
-                <p className=" text-sm lg:p-1">Light</p>
-                <Moon className=" bg-slate-700 rounded-full" />
-              </div>
-            )}
-          </div>
+         
+          <Toggle onClick={handleThemeChange} bgColor="primary" label="Toggle" size="md" withIcon={true} />
           <div
             onClick={() => setOpen(!open)}
             className=" relative cursor-pointer duration-200 p-1 rounded-md dark:text-white text-black"

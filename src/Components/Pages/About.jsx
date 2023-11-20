@@ -1,6 +1,8 @@
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 import AboutImg from "./IMG/rashedsvg.png";
+
+import { Accordion } from "keep-react";
 const MySkill = [
   { skillTitle: "Social media measurement", skillFrom: "Coursera" },
   { skillTitle: "Digital Strategy", skillFrom: "Hubspot Academy" },
@@ -16,6 +18,7 @@ const MySkill = [
   { skillTitle: "Digital Marketing", skillFrom: "Hubspot Academy" },
   { skillTitle: "Social Media Marketing", skillFrom: "Hubspot Academy" },
 ];
+
 export const About = () => {
   return (
     <>
@@ -90,24 +93,57 @@ export const About = () => {
               </p>
               <div className=" mt-5  flex items-center lg:justify-start justify-center ">
                 <div className="lg:w-auto w-full">
-                  <ul className=" capitalize font-Poppins lg:text-[16px] font-[400] flex items-center lg:justify-start justify-center lg:space-x-3">
-                    <li className=" bg-slate-200 dark:bg-slate-600 font-[500] py-1 rounded-sm px-5">
-                      Skill
-                    </li>
-                  </ul>
-                  <h2 className=" py-2">
-                    <ul className=" grid gap-2 lg:grid-cols-2">
-                      {MySkill.map((items, index) => (
-                        <li
-                          className=" flex items-center group dark:hover:bg-[#ff5503] dark:bg-slate-700 hover:bg-slate-300 duration-500 hover:text-[#ff5503] rounded-md px-2 font-Poppins font-[400] capitalize dark:text-slate-300 dark:hover:text-black text-slate-800 py-1 bg-slate-200 "
-                          key={index}
-                        >
-                          {" "}
-                          <p className="group-hover:bg-green-500 duration-300 rounded-md">🥇</p> {items.skillTitle}
-                        </li>
-                      ))}
-                    </ul>
-                  </h2>
+                  <Accordion
+                    collapseAll={true}
+                    className=" rounded-md border-none bg-none"
+                  >
+                    <Accordion.Panel>
+                      <Accordion.Title className="hover:bg-[#ff5503] text-white py-2 px-5 bg-slate-500  dark:bg-slate-700">
+                        Skill
+                      </Accordion.Title>
+                      <Accordion.Content className="py-5 bg-slate-200  dark:bg-slate-900">
+                        <h1>
+                          <ul className=" grid gap-2 lg:grid-cols-2">
+                            {MySkill.map((items, index) => (
+                              <li
+                                className=" flex items-center group dark:hover:bg-[#ff5503] dark:bg-slate-700 hover:bg-slate-300 duration-500 hover:text-[#ff5503] rounded-md px-2 font-Poppins font-[400] capitalize dark:text-slate-300 dark:hover:text-black text-slate-800 py-1 bg-slate-200 "
+                                key={index}
+                              >
+                                {" "}
+                                <p className="group-hover:bg-green-500 duration-300 rounded-md">
+                                  🥇
+                                </p>{" "}
+                                {items.skillTitle}
+                              </li>
+                            ))}
+                          </ul>
+                        </h1>
+                      </Accordion.Content>
+                    </Accordion.Panel>
+                    <Accordion.Panel className="">
+                      <Accordion.Title className=" text-white py-2 px-5 hover:bg-[#ff5503] bg-slate-500  dark:bg-slate-700">
+                        Exprince
+                      </Accordion.Title>
+                      <Accordion.Content className=" py-5 bg-slate-200 dark:bg-slate-900">
+                        <h1>
+                          <ul className=" grid gap-2 lg:grid-cols-2">
+                            {MySkill.map((items, index) => (
+                              <li
+                                className=" flex items-center group dark:hover:bg-[#ff5503] dark:bg-slate-700 hover:bg-slate-300 duration-500 hover:text-[#ff5503] rounded-md px-2 font-Poppins font-[400] capitalize dark:text-slate-300 dark:hover:text-black text-slate-800 py-1 bg-slate-200 "
+                                key={index}
+                              >
+                                {" "}
+                                <p className="group-hover:bg-green-500 duration-300 rounded-md">
+                                  🥇
+                                </p>{" "}
+                                {items.skillTitle}
+                              </li>
+                            ))}
+                          </ul>
+                        </h1>
+                      </Accordion.Content>
+                    </Accordion.Panel>
+                  </Accordion>
                 </div>
               </div>
             </motion.div>
