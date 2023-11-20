@@ -11,7 +11,7 @@ import "./Leanding.css";
 function LeandingPage() {
   return (
     <div
-      className={`leanding h-[100vh] w-full bg-cover bg-center bg-slate-50 dark:bg-slate-800`}
+      className={`leanding h-[100vh] w-full bg-cover bg-center bg-slate-50 dark:bg-slate-950`}
     >
       <div className=" px-10 md:px-[7%] lg:px-[10%] h-screen grid grid-flow-row md:flex lg:space-y-0 md:space-y-0 -space-y-[100px]  items-center justify-between">
         <motion.div

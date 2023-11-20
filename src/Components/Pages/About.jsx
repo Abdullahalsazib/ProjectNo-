@@ -1,10 +1,25 @@
 import { motion, useScroll } from "framer-motion";
 import React from "react";
-import AboutImg from "./IMG/about-img.png";
-function About() {
+import AboutImg from "./IMG/rashedsvg.png";
+const MySkill = [
+  { skillTitle: "Social media measurement", skillFrom: "Coursera" },
+  { skillTitle: "Digital Strategy", skillFrom: "Hubspot Academy" },
+  { skillTitle: "Content Marketing", skillFrom: "Hubspot Academy" },
+  { skillTitle: "Market Analysis", skillFrom: "Coursera" },
+  { skillTitle: "Problem Solving", skillFrom: "" },
+  { skillTitle: "Creativity", skillFrom: "" },
+  { skillTitle: "Project Management", skillFrom: "Courser" },
+  { skillTitle: "Data Analysis", skillFrom: "" },
+  { skillTitle: "Search Engine Optimization (SEO)", skillFrom: "" },
+  { skillTitle: "Logo Design", skillFrom: "" },
+  { skillTitle: "Video Editing", skillFrom: "" },
+  { skillTitle: "Digital Marketing", skillFrom: "Hubspot Academy" },
+  { skillTitle: "Social Media Marketing", skillFrom: "Hubspot Academy" },
+];
+export const About = () => {
   return (
     <>
-      <div className=" py-10 bg-white dark:bg-slate-950 px-5 lg:px-[10%]">
+      <div className=" py-10 bg-white dark:bg-slate-800 px-5 lg:px-[10%]">
         <motion.div
           initial={{
             y: 75,
@@ -16,7 +31,7 @@ function About() {
           }}
           transition={{
             duration: 0.5,
-            delay: 0.25,
+            delay: 0.5,
           }}
           className=" flex items-center justify-center"
         >
@@ -42,7 +57,7 @@ function About() {
               className="  w-full  flex items-center lg:justify-start justify-center"
             >
               <img
-                className=" rounded-lg w-full md:w-[30%] lg:w-[50%]"
+                className="  w-full md:w-[30%] lg:w-[50%]"
                 src={AboutImg}
                 alt=""
               />
@@ -60,7 +75,7 @@ function About() {
                 duration: 0.5,
                 delay: 0.25,
               }}
-              className=" sm:w-[100%] h-full px-5 py-2"
+              className=" sm:w-[100%] h-full lg:px-5 py-2"
             >
               <p className=" hover:text-[20px] dark:text-gray-400 text-gray-600  duration-200 text-[19px] font-Poppins">
                 <span className=" dark:text-white text-black font-Poppins  font-semibold">
@@ -73,12 +88,32 @@ function About() {
                 and online business consulting to help companies of all sizes
                 thrive in the digital landscape.
               </p>
+              <div className=" mt-5  flex items-center lg:justify-start justify-center ">
+                <div className="lg:w-auto w-full">
+                  <ul className=" capitalize font-Poppins lg:text-[16px] font-[400] flex items-center lg:justify-start justify-center lg:space-x-3">
+                    <li className=" bg-slate-200 dark:bg-slate-600 font-[500] py-1 rounded-sm px-5">
+                      Skill
+                    </li>
+                  </ul>
+                  <h2 className=" py-2">
+                    <ul className=" grid gap-2 lg:grid-cols-2">
+                      {MySkill.map((items, index) => (
+                        <li
+                          className=" flex items-center group dark:hover:bg-[#ff5503] dark:bg-slate-700 hover:bg-slate-300 duration-500 hover:text-[#ff5503] rounded-md px-2 font-Poppins font-[400] capitalize dark:text-slate-300 dark:hover:text-black text-slate-800 py-1 bg-slate-200 "
+                          key={index}
+                        >
+                          {" "}
+                          <p className="group-hover:bg-green-500 duration-300 rounded-md">🥇</p> {items.skillTitle}
+                        </li>
+                      ))}
+                    </ul>
+                  </h2>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
       </div>
     </>
   );
-}
-
-export default About;
+};
