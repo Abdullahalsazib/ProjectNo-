@@ -20,7 +20,7 @@ function LeandingPage() {
           }}
           transition={{
             duration: 1,
-            delay: .1
+            delay: 0.1,
           }}
           className=" w-full md:w-[50%] md:text-left text-center"
         >
@@ -77,18 +77,19 @@ function LeandingPage() {
           }}
           transition={{
             duration: 1,
-            delay: .1
+            delay: 0.1,
           }}
           className=" w-full md:w-[50%]"
         >
           <div className=" flex items-center justify-center md:justify-end">
             <div className=" relative w-[60%] h-[450px] lg:border-[10px] border-green-500 md:rounded-full">
               <div className=" lg:block hidden rounded-full w-[50px] h-[50px] bg-green-600 absolute top-5 animate-bounce right-10"></div>
-              <img
+              {/* <img
                 className=" animate-none"
-                src="./src/Components/Pages/IMG/RashedImg.png"
+                src="src/Components/Pages/IMG/RashedImg.png"
                 alt=""
-              />
+              /> */}
+              <img src="src/Components/Pages/IMG/Rashed.svg" alt="" />
             </div>
           </div>
         </motion.div>
