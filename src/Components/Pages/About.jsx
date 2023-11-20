@@ -1,6 +1,6 @@
 import { motion, useScroll } from "framer-motion";
 import React from "react";
-
+import AboutImg from "./IMG/about-img.png";
 function About() {
   return (
     <>
@@ -14,7 +14,6 @@ function About() {
             y: 0,
             opacity: 1,
           }}
-          
           transition={{
             duration: 0.5,
             delay: 0.25,
@@ -36,7 +35,6 @@ function About() {
                 y: 0,
                 opacity: 1,
               }}
-              
               transition={{
                 duration: 0.5,
                 delay: 0.25,
@@ -45,7 +43,7 @@ function About() {
             >
               <img
                 className=" rounded-lg w-full md:w-[30%] lg:w-[50%]"
-                src="./src/Components/Pages/IMG/about-img.png"
+                src={AboutImg}
                 alt=""
               />
             </motion.div>
@@ -54,11 +52,9 @@ function About() {
                 y: 75,
                 opacity: 0,
               }}
-              
               whileInView={{
                 y: 0,
                 opacity: 1,
-                
               }}
               transition={{
                 duration: 0.5,
