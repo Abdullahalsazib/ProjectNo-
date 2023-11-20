@@ -82,7 +82,7 @@ function LeandingPage() {
           className=" w-full md:w-[50%]"
         >
           <div className=" flex items-center justify-center md:justify-end">
-            <div className=" relative w-[60%] lg:border-[10px] border-green-500 md:rounded-full">
+            <div className=" relative w-[60%] h-[450px] lg:border-[10px] border-green-500 md:rounded-full">
               <div className=" lg:block hidden rounded-full w-[50px] h-[50px] bg-green-600 absolute top-5 animate-bounce right-10"></div>
               <img
                 className=" animate-none"
