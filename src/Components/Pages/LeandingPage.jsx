@@ -4,11 +4,13 @@ import { FaCircleUser } from "react-icons/fa6";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import RashedImg from "./IMG/RashedImg.png";
+import LLogo from "./IMG/LogoL.png";
+import DLogo from "./IMG/logoD.png";
 
 function LeandingPage() {
   return (
     <div
-      className={`leanding h-screen w-full bg-cover bg-center bg-[url('./IMG/light.png')] dark:bg-[url('./IMG/dark.png')]`}
+      className={`leanding h-screen w-full bg-cover bg-center bg-[url('${LLogo}')] dark:bg-[url('${DLogo}')]`}
     >
       <div className=" px-10 lg:px-[12%] h-screen grid grid-flow-row md:flex  items-center justify-between">
         <motion.div
