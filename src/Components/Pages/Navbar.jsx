@@ -9,6 +9,8 @@ const MenuList = [
   { menuTitle: "Blog", MenuLink: "@" },
   { menuTitle: "Contact", MenuLink: "@" },
 ];
+import LogoD from "./IMG/logoD.png";
+import LogoL from "./IMG/LogoL.png";
 function Navbar() {
   const [theme, setTheme] = useState("light");
   const [open, setOpen] = useState(true);
@@ -38,11 +40,7 @@ function Navbar() {
             }}
             className=" w-[100px] md:w-[110px]"
           >
-            <img
-              className="  w-full"
-              src="./src/Components/Pages/IMG/LogoL.png"
-              alt=""
-            />
+            <img className="  w-full" src={LogoL} alt="" />
           </motion.div>
         ) : (
           <motion.div
@@ -57,11 +55,7 @@ function Navbar() {
             }}
             className=" w-[100px] md:w-[110px]"
           >
-            <img
-              className="w-full"
-              src="./src/Components/Pages/IMG/logoD.png"
-              alt=""
-            />
+            <img className="w-full" src={LogoD} alt="" />
           </motion.div>
         )}
 
