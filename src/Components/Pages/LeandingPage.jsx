@@ -3,12 +3,12 @@ import { FaLink } from "react-icons/fa";
 import { FaCircleUser } from "react-icons/fa6";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-// import "./Leanding.css"
+import RashedImg from "./IMG/RashedImg.png";
 
 function LeandingPage() {
   return (
     <div
-      className={`leanding h-screen w-full bg-cover bg-center bg-[url('./src/Components/Pages/IMG/light.png')] dark:bg-[url('./src/Components/Pages/IMG/dark.png')]`}
+      className={`leanding h-screen w-full bg-cover bg-center bg-[url('./IMG/light.png')] dark:bg-[url('./IMG/dark.png')]`}
     >
       <div className=" px-10 lg:px-[12%] h-screen grid grid-flow-row md:flex  items-center justify-between">
         <motion.div
@@ -82,9 +82,9 @@ function LeandingPage() {
           className=" w-full md:w-[50%]"
         >
           <div className=" flex items-center justify-center md:justify-end">
-            <div className=" bg-[url('./src/Components/Pages/IMG/RashedImg.png')] bg-center bg-cover relative w-[60%] h-[450px] lg:border-[10px] border-green-500 md:rounded-full">
+            <div className=" relative w-[60%] h-[450px] lg:border-[10px] border-green-500 md:rounded-full">
               <div className=" lg:block hidden rounded-full w-[50px] h-[50px] bg-green-600 absolute top-5 animate-bounce right-10"></div>
-           
+              <img src={RashedImg} alt="" />
             </div>
           </div>
         </motion.div>
@@ -94,4 +94,3 @@ function LeandingPage() {
 }
 
 export default LeandingPage;
-
