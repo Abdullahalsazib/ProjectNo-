@@ -4,15 +4,16 @@ import { FaCircleUser } from "react-icons/fa6";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import RashedImg from "./IMG/RashedImg.png";
+import "./Leanding.css";
 // import BGDark from "./IMG/Dark.svg";
 // import BGLight from "./IMG/Light.svg";
 
 function LeandingPage() {
   return (
     <div
-      className={`leanding h-screen w-full bg-cover bg-center bg-slate-50 dark:bg-slate-800`}
+      className={`leanding h-[90vh] w-full bg-cover bg-center bg-slate-50 dark:bg-slate-800`}
     >
-      <div className=" px-10 lg:px-[12%] h-screen grid grid-flow-row md:flex  items-center justify-between">
+      <div className=" px-10 md:px-[7%] lg:px-[10%] h-screen grid grid-flow-row md:flex lg:space-y-0 md:space-y-0 -space-y-[100px]  items-center justify-between">
         <motion.div
           initial={{
             x: -400,
@@ -24,7 +25,7 @@ function LeandingPage() {
             duration: 1,
             delay: 0.1,
           }}
-          className=" w-full md:w-[50%] md:text-left text-center"
+          className="  w-full md:w-[50%] md:text-left text-center"
         >
           <h1 className=" lg:text-[20px] font-semibold py-10 md:py-0">
             <p className=" font-Poppins text-sm lg:text-2xl dark:text-white font-[400]">
@@ -81,11 +82,11 @@ function LeandingPage() {
             duration: 1,
             delay: 0.1,
           }}
-          className=" w-full md:w-[50%]"
+          className="w-full md:w-[50%]"
         >
           <div className=" flex items-center justify-center md:justify-end">
-            <div className=" relative w-[60%] lg:border-[10px] border-green-500 md:rounded-full">
-              <div className=" lg:block hidden rounded-full w-[50px] h-[50px] bg-green-600 absolute top-5 animate-bounce right-10"></div>
+            <div className=" relative w-[60%] ">
+              {" "}
               <img src={RashedImg} alt="" />
             </div>
           </div>

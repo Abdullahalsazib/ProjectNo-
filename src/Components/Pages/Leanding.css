@@ -1,5 +1,6 @@
-.leanding{
-    background: url('./IMG/light.png');
-    background-position: center;
-    background-size: cover;
+.lending {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border-radius: 38% 62% 27% 73% / 59% 36% 64% 41%;
 }
