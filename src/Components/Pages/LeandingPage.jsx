@@ -57,7 +57,7 @@ function LeandingPage() {
           >
             <h1 className=" lg:text-[20px] font-semibold py-10 md:py-0">
               <p className=" font-Poppins text-sm lg:text-2xl dark:text-white font-[400]">
-                Hi.. There..... 🌺 I'm a{" "}
+                Hi.. There..... I'm a{" "}
               </p>
               <span className=" text-[30px] lg:text-[30px] font-Poppins ">
                 <p className=" dark:text-slate-500 font-Poppins text-[20px] lg:text-[28px] font-[400]">
