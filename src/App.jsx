@@ -14,7 +14,7 @@ function App() {
     <>
       <div className=" bg-white dark:bg-slate-800">
         {/* <Navbar /> */}
-        <FlowBanner/>
+        
 
         <FlowbiteNavbar />
         <Router>
