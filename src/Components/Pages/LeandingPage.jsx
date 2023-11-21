@@ -11,6 +11,7 @@ import MainTimeline from "./Timeline";
 import Contact from "./Contact";
 import ExprinceTimeLIne from "../SmallComponents/Timeline/ExprinceTimeLIne";
 import SkillsTimeLIne from "../SmallComponents/Timeline/SkillsTimeLIne";
+import Featured from "./Featured";
 
 function LeandingPage() {
   return (
@@ -105,6 +106,7 @@ function LeandingPage() {
         </div>
         {/* akdfjfjaklfj */}
         <About />
+        <Featured/>
         <div className=" px-5 lg:px-[10%] lg:flex items- justify-between">
           <SkillsTimeLIne />
           <ExprinceTimeLIne />
