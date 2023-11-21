@@ -25,7 +25,7 @@ const FlowCard = () => {
   return (
     <>
       <Card
-        className="max-w-sm "
+        className=" w-full "
         // imgAlt="Meaningful alt text for an image that is not purely decorative"
         // imgSrc="https://flowbite.com/docs/images/carousel/carousel-1.svg"
       >
