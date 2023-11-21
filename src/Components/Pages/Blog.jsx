@@ -9,11 +9,6 @@ function Blog() {
         <FlowCard />
         <FlowCard />
         <FlowCard />
-        <FlowCard />
-        <FlowCard />
-        <FlowCard />
-        <FlowCard />
-        <FlowCard />
       </div>
     </>
   );
@@ -25,7 +20,7 @@ const FlowCard = () => {
   return (
     <>
       <Card
-        className=" w-full "
+        className=" w-full  h-[210px]"
         // imgAlt="Meaningful alt text for an image that is not purely decorative"
         // imgSrc="https://flowbite.com/docs/images/carousel/carousel-1.svg"
       >

@@ -22,7 +22,7 @@ const MySkill = [
 export const About = () => {
   return (
     <>
-      <div className=" py-10 bg-white dark:bg-slate-800 px-5 lg:px-[10%]">
+      <div className=" h-screen py-10 bg-white dark:bg-slate-800 px-5 lg:px-[10%]">
         <motion.div
           initial={{
             y: 75,
@@ -38,7 +38,7 @@ export const About = () => {
           }}
           className=" flex items-center justify-center"
         >
-          <h1 className="font-Poppins  font-[700] text-[20px] lg:text-[45px] lg:w-[20%] text-center text-black dark:text-white uppercase border-b-orange-500 border-b-[4px]">
+          <h1 className="font-Poppins  font-[700] text-[20px] lg:text-[30px] lg:w-[20%] text-center text-black dark:text-white uppercase border-b-orange-500 border-b-[4px]">
             About
           </h1>
         </motion.div>
@@ -80,7 +80,7 @@ export const About = () => {
               }}
               className=" sm:w-[100%] h-full lg:px-5 py-2"
             >
-              <p className=" hover:text-[20px] dark:text-gray-400 text-gray-600  duration-200 text-[19px] font-Poppins">
+              <p className=" hover:text-[19px] dark:text-gray-400 text-gray-600  duration-200 text-[17px] font-Poppins">
                 <span className=" dark:text-white text-black font-Poppins  font-semibold">
                   Assalamualaikum!🌟
                 </span>{" "}

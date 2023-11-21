@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Checkbox, Label, TextInput } from "flowbite-react";
+import { Button, Checkbox, Label, TextInput, Textarea } from "flowbite-react";
 function FlowFrom() {
   return (
     <div>
@@ -18,9 +18,15 @@ function FlowFrom() {
         </div>
         <div>
           <div className="mb-2 block">
-            <Label htmlFor="password1" value="Your password" />
+            <Label htmlFor="name" value="Your Name" />
           </div>
-          <TextInput id="password1" type="password" required />
+          <TextInput id="name" type="text" />
+        </div>
+        <div className="mb-2 block">
+          <div className="mb-2 block">
+            <Label htmlFor="messges" value="Messages" />
+          </div>
+          <Textarea id="messges" placeholder="Type Your Messages !" />
         </div>
         <div className="flex items-center gap-2">
           <Checkbox id="remember" />

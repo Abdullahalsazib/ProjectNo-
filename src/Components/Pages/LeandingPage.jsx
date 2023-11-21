@@ -5,8 +5,10 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import RashedImg from "./IMG/RashedImg.png";
 import "./Leanding.css";
-// import BGDark from "./IMG/Dark.svg";
-// import BGLight from "./IMG/Light.svg";
+import { About } from "./About";
+import { TimelineComponent } from "../SmallComponents/Timeline";
+import FlowFooter from "../SmallComponents/FlowFooter";
+import FlowbitTimeline from "../SmallComponents/FlowbitTimeline";
 
 function LeandingPage() {
   return (
@@ -96,6 +98,10 @@ function LeandingPage() {
           </div>
         </motion.div>
       </div>
+      <About/>
+      {/* <FlowbitTimeline/> */}
+      <TimelineComponent/>
+      <FlowFooter/>
     </div>
   );
 }
