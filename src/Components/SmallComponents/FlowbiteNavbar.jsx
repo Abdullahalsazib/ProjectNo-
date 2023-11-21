@@ -6,10 +6,10 @@ import LogoL from "../Pages/IMG/LogoL.png";
 import { Toggle } from "keep-react";
 import { TrainFrontTunnel } from "lucide-react";
 const MenuList = [
-  { menuTitle: "Home", MenuLink: "@" },
-  { menuTitle: "About", MenuLink: "@" },
-  { menuTitle: "Blog", MenuLink: "@" },
-  { menuTitle: "Contact", MenuLink: "@" },
+  { menuTitle: "Home", MenuLink: "/" },
+  { menuTitle: "About", MenuLink: "/about" },
+  { menuTitle: "Blog", MenuLink: "/blog" },
+  { menuTitle: "Contact", MenuLink: "/contact" },
 ];
 function FlowbiteNavbar() {
   const [theme, setTheme] = useState(null);

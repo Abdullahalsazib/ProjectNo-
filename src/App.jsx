@@ -9,19 +9,28 @@ import Carsole from "./Components/SmallComponents/Carsole";
 import FlowbiteNavbar from "./Components/SmallComponents/FlowbiteNavbar";
 import FlowFooter from "./Components/SmallComponents/FlowFooter";
 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Contact from "./Components/Pages/Contact";
+import Blog from "./Components/Pages/Blog";
+
 function App() {
   return (
     <>
       <div className=" bg-white dark:bg-slate-800">
         {/* <Navbar /> */}
         <FlowbiteNavbar />
-        <LeandingPage />
-        <About />
+        <Router>
+          <Routes>
+            <Route path="/" element={<LeandingPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/timelineComponent" element={<TimelineComponent />} />
+          </Routes>
+        </Router>
 
-        <Carsole />
-        <TimelineComponent />
         {/* <Skills /> */}
-        <FlowFooter/>
+        <FlowFooter />
       </div>
     </>
   );
