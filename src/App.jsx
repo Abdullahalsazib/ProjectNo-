@@ -1,14 +1,12 @@
 import LeandingPage from "./Components/Pages/LeandingPage";
 import "./Components/Pages/Leanding.css";
 import { About } from "./Components/Pages/About";
-import { TimelineComponent } from "./Components/SmallComponents/Timeline";
 import FlowbiteNavbar from "./Components/SmallComponents/FlowbiteNavbar";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./Components/Pages/Contact";
 import Blog from "./Components/Pages/Blog";
-import FlowFooter from "./Components/SmallComponents/FlowFooter";
-import FlowbitTimeline from "./Components/SmallComponents/FlowbitTimeline";
+import MainTimeline from "./Components/Pages/Timeline";
 
 function App() {
   return (
@@ -22,7 +20,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/timeline" element={<FlowbitTimeline />} />
+            
           </Routes>
         </Router>
         {/* <FlowFooter/> */}

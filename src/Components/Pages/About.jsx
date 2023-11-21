@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import AboutImg from "./IMG/rashedsvg.png";
+import { Tabs } from "flowbite-react";
 
 import { Accordion } from "keep-react";
 const MySkill = [
@@ -22,7 +23,7 @@ const MySkill = [
 export const About = () => {
   return (
     <>
-      <div className=" h-screen py-10 bg-white dark:bg-slate-800 px-5 lg:px-[10%]">
+      <div className="py-10 bg-white dark:bg-slate-800 px-5 lg:px-[10%]">
         <motion.div
           initial={{
             y: 75,
@@ -144,6 +145,7 @@ export const About = () => {
                       </Accordion.Content>
                     </Accordion.Panel>
                   </Accordion>
+                 
                 </div>
               </div>
             </motion.div>
