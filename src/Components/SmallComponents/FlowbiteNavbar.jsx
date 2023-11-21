@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import LogoD from "../Pages/IMG/logoD.png";
 import LogoL from "../Pages/IMG/LogoL.png";
 import { Toggle } from "keep-react";
-import { TrainFrontTunnel } from "lucide-react";
+import { Moon, Sun, TrainFrontTunnel } from "lucide-react";
 const MenuList = [
   { menuTitle: "Home", MenuLink: "/" },
   { menuTitle: "About", MenuLink: "/about" },
@@ -41,8 +41,12 @@ function FlowbiteNavbar() {
             transition={{
               duration: 0.9,
             }} */}
-      <div className=" dark:bg-slate-900  bg-slate-50  ">
-        <Navbar className="py-3 px-5 md:px-10 lg:px-[10%]" fluid rounded>
+      <div className="">
+        <Navbar
+          className="py-3 px-5 md:px-10 lg:px-[10%]  dark:bg-slate-900  bg-slate-200  "
+          fluid
+          rounded
+        >
           <Navbar.Brand href="@">
             <div className=" w-[100px] md:w-[110px]">
               {theme === "dark" ? (
@@ -64,7 +68,6 @@ function FlowbiteNavbar() {
               bgColor="primary"
               label="Toggle"
               size="md"
-              withIcon={true}
             />
           </Navbar.Collapse>
         </Navbar>{" "}

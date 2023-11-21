@@ -1,5 +1,15 @@
 import { motion } from "framer-motion";
-import { FaLink } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaFacebook,
+  FaInstagram,
+  FaLink,
+  FaLinkedin,
+  FaPhone,
+  FaTiktok,
+  FaTwitter,
+  FaUser,
+} from "react-icons/fa";
 import { FaCircleUser } from "react-icons/fa6";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
@@ -12,7 +22,17 @@ import Contact from "./Contact";
 import ExprinceTimeLIne from "../SmallComponents/Timeline/ExprinceTimeLIne";
 import SkillsTimeLIne from "../SmallComponents/Timeline/SkillsTimeLIne";
 import Featured from "./Featured";
-
+import { Button } from "flowbite-react";
+const SociIcon = [
+  { Icon: FaFacebook, link: "https://www.facebook.com/rasheduldijital" },
+  { Icon: FaInstagram, link: "https://www.instagram.com/digitalrashed/" },
+  { Icon: FaLinkedin, link: "https://www.linkedin.com/in/rasheddigital/" },
+  // { Icon: FaTiktok, link: "#" },
+  {
+    Icon: FaTwitter,
+    link: "https://twitter.com/DigitalrashedH",
+  },
+];
 function LeandingPage() {
   return (
     <div>
@@ -33,7 +53,7 @@ function LeandingPage() {
               duration: 0.5,
               delay: 0.25,
             }}
-            className="  w-full md:w-[50%] md:text-left text-center"
+            className=" relative  w-full md:w-[50%] md:text-left text-center"
           >
             <h1 className=" lg:text-[20px] font-semibold py-10 md:py-0">
               <p className=" font-Poppins text-sm lg:text-2xl dark:text-white font-[400]">
@@ -71,14 +91,45 @@ function LeandingPage() {
               </span>
             </h1>
 
-            <div className=" mt-5 md:mt-0 flex items-center md:justify-start justify-center space-x-1  lg:space-x-6">
-              <button className=" flex items-center bg-yellow-300 px-3 py-1 lg:py-2 lg:px-6 font-Roboto font-[500] lg:text-[20px]">
-                <p className=" pr-2 lg:pr-4"> Hire me</p> <FaLink />
-              </button>
-              <button className=" flex items-center bg-yellow-300  px-3 py-1 lg:py-2 lg:px-6 font-Roboto font-[500] lg:text-[20px]">
-                <p className=" pr-2 lg:pr-4"> About</p> <FaCircleUser />
-              </button>
+            <div className=" relative mt-5 md:mt-0 flex items-center md:justify-start justify-center space-x-1  lg:space-x-6">
+              <Button
+                href="./src/Components/Pages/IMG/resume.pdf"
+                outline
+                gradientDuoTone="pinkToOrange"
+                className="  flex items-center "
+              >
+                <p className=" pr-2 lg:pr-4">Resume</p>{" "}
+                <FaArrowRight className="" />
+              </Button>
+              <Button
+                href="https://www.facebook.com/rasheduldijital"
+                outline
+                gradientDuoTone="purpleToBlue"
+                className=" flex items-center "
+              >
+                <p className=" pr-2 lg:pr-4"> Contact Me</p>{" "}
+                <FaPhone className=" animate-bounce" />
+              </Button>
+
+              <div className="  absolute lg:-left-[100px]">
+                <ul className=" hidden lg:grid grid-flow-row gap-4">
+                  {SociIcon.map((items, index) => (
+                    <li className="p-3  cursor-pointer group rounded-full ring-[3px] ring-blue-400 hover:ring-[3px] duration-300 hover:ring-[#ff5503]">
+                      <a
+                        key={index}
+                        className="text-[20px] duration-300 text-blue-400 group-hover:text-[#ff5503]  dark:text-white"
+                        href={items.link}
+                      >
+                        {<items.Icon />}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
+            {/* some Icons in left side */}
+
+            {/* some Icons in left side */}
           </motion.div>
           {/* awkjlkfjalfjkajf */}
           <motion.div
@@ -106,7 +157,7 @@ function LeandingPage() {
         </div>
         {/* akdfjfjaklfj */}
         <About />
-        <Featured/>
+        <Featured />
         <div className=" px-5 lg:px-[10%] lg:flex items- justify-between">
           <SkillsTimeLIne />
           <ExprinceTimeLIne />
