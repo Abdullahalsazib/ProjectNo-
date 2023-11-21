@@ -43,7 +43,7 @@ function FlowbiteNavbar() {
             }} */}
       <div className=" dark:bg-slate-900  bg-slate-50  ">
         <Navbar className="py-3 px-5 md:px-10 lg:px-[10%]" fluid rounded>
-          <Navbar.Brand href="https://flowbite-react.com">
+          <Navbar.Brand href="@">
             <div className=" w-[100px] md:w-[110px]">
               {theme === "dark" ? (
                 <img src={LogoL} alt="" />
