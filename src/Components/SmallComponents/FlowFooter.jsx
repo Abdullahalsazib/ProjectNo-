@@ -24,7 +24,7 @@ function FlowFooter() {
           <Footer.Divider />
           <Footer.Copyright
             href="https://www.facebook.com/abdullahalsazib22"
-            by="Abdullah Al Sazib"
+            by="Designer and Developer Abdullah Al Sazib"
             year={2023}
           />
         </div>

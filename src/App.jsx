@@ -7,12 +7,15 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./Components/Pages/Contact";
 import Blog from "./Components/Pages/Blog";
 import MainTimeline from "./Components/Pages/Timeline";
+import FlowBanner from "./Components/SmallComponents/FlowBanner";
 
 function App() {
   return (
     <>
       <div className=" bg-white dark:bg-slate-800">
         {/* <Navbar /> */}
+        <FlowBanner/>
+
         <FlowbiteNavbar />
         <Router>
           <Routes>
