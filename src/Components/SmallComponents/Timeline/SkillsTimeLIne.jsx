@@ -3,7 +3,7 @@ import { Button, Timeline } from "flowbite-react";
 import { Star } from "phosphor-react";
 import { motion } from "framer-motion";
 const MySkill = [
-  { skillTitle: "Social media measurement", skillFrom: "Coursera" },
+  { skillTitle: "Social media management", skillFrom: "Coursera" },
   { skillTitle: "Digital Strategy", skillFrom: "Hubspot Academy" },
   { skillTitle: "Content Marketing", skillFrom: "Hubspot Academy" },
   { skillTitle: "Market Analysis", skillFrom: "Coursera" },

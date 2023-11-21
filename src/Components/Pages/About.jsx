@@ -5,7 +5,7 @@ import { Tabs } from "flowbite-react";
 
 import { Accordion } from "keep-react";
 const MySkill = [
-  { skillTitle: "Social media measurement", skillFrom: "Coursera" },
+  { skillTitle: "Social media management", skillFrom: "Coursera" },
   { skillTitle: "Digital Strategy", skillFrom: "Hubspot Academy" },
   { skillTitle: "Content Marketing", skillFrom: "Hubspot Academy" },
   { skillTitle: "Market Analysis", skillFrom: "Coursera" },
@@ -95,7 +95,8 @@ export const About = () => {
               <div className=" mt-5  flex items-center lg:justify-start justify-center ">
                 <div className="lg:w-auto w-full">
                   <Accordion
-                    collapseAll={false} alwaysOpen={true}
+                    collapseAll={false}
+                    alwaysOpen={true}
                     className=" rounded-md border-none bg-none"
                   >
                     <Accordion.Panel>
@@ -145,7 +146,6 @@ export const About = () => {
                       </Accordion.Content>
                     </Accordion.Panel>
                   </Accordion>
-                 
                 </div>
               </div>
             </motion.div>
