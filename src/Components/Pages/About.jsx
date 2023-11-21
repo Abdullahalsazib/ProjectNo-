@@ -94,7 +94,7 @@ export const About = () => {
               <div className=" mt-5  flex items-center lg:justify-start justify-center ">
                 <div className="lg:w-auto w-full">
                   <Accordion
-                    collapseAll={true}
+                    collapseAll={false} alwaysOpen={true}
                     className=" rounded-md border-none bg-none"
                   >
                     <Accordion.Panel>

@@ -6,8 +6,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/keep-react/**/*.{js,jsx,ts,tsx}",
     // "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   presets: [keepPreset],
+
   darkMode: "class",
   theme: {
     extend: {
@@ -17,5 +19,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

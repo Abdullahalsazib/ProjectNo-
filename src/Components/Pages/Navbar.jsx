@@ -4,55 +4,16 @@ import { useEffect, useState } from "react";
 
 import { Toggle } from "keep-react";
 
-
-
-
-
 // json
-const MenuList = [
-  { menuTitle: "Home", MenuLink: "@" },
-  { menuTitle: "About", MenuLink: "@" },
-  { menuTitle: "Blog", MenuLink: "@" },
-  { menuTitle: "Contact", MenuLink: "@" },
-];
+
 import LogoD from "./IMG/logoD.png";
 import LogoL from "./IMG/LogoL.png";
 function Navbar() {
-  const [theme, setTheme] = useState("light");
-  const [open, setOpen] = useState(true);
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }, []);
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
-  const handleThemeChange = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
   return (
     <div>
       <nav className=" dark:bg-slate-900 bg-slate-50 w-full  py-3 px-5 md:px-10 lg:px-[10%] flex items-center justify-between">
         {theme === "dark" ? (
-          <motion.div
-            initial={{
-              x: -400,
-            }}
-            animate={{
-              x: 0,
-            }}
-            transition={{
-              duration: 0.9,
-            }}
-            className=" w-[100px] md:w-[110px]"
-          >
+          <motion.div className=" w-[100px] md:w-[110px]">
             <img className="  w-full" src={LogoL} alt="" />
           </motion.div>
         ) : (
@@ -84,8 +45,13 @@ function Navbar() {
           }}
           className="flex items-center space-x-4"
         >
-         
-          <Toggle onClick={handleThemeChange} bgColor="primary" label="Toggle" size="md" withIcon={true} />
+          <Toggle
+            onClick={handleThemeChange}
+            bgColor="primary"
+            label="Toggle"
+            size="md"
+            withIcon={true}
+          />
           <div
             onClick={() => setOpen(!open)}
             className=" relative cursor-pointer duration-200 p-1 rounded-md dark:text-white text-black"
