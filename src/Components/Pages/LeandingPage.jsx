@@ -59,8 +59,8 @@ function LeandingPage() {
               <p className=" font-Poppins text-sm lg:text-2xl dark:text-white font-[400]">
                 Hi.. There..... 🌺 I'm a{" "}
               </p>
-              <span className=" text-[30px] lg:text-[50px] font-Poppins ">
-                <p className=" dark:text-slate-500 font-Poppins text-[29px] lg:text-[50px] font-[400]">
+              <span className=" text-[30px] lg:text-[30px] font-Poppins ">
+                <p className=" dark:text-slate-500 font-Poppins text-[20px] lg:text-[28px] font-[400]">
                   Professional
                 </p>
                 <span className="text-[#ff5503] font-Poppins font-[700]">
@@ -78,7 +78,7 @@ function LeandingPage() {
               </span>
             </h1>
 
-            <h1 className=" text-[27px] lg:text-[70px] lg:py-5 font-bold ">
+            <h1 className=" text-[27px] lg:text-[40px] lg:py-5 font-bold ">
               <p className=" text-sm lg:text-[20px] font-Poppins font-[400] dark:text-white lg:tracking-[10px]">
                 My Name is
               </p>
